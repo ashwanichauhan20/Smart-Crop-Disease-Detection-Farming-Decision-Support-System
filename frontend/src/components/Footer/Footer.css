@@ -1,0 +1,308 @@
+.footer {
+    background: linear-gradient(135deg, #1B5E20 0%, #2E7D32 60%, #33691E 100%);
+    color: rgba(255, 255, 255, 0.85);
+    margin-top: auto;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 3rem;
+    padding: 4rem 1.5rem 2.5rem;
+}
+
+/* Brand */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.75rem;
+}
+
+.footer-logo span:first-child {
+    font-size: 1.6rem;
+}
+
+.footer-tagline {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--secondary-light);
+    margin-bottom: 1rem;
+    letter-spacing: 0.3px;
+}
+
+.footer-desc {
+    font-size: 0.85rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-socials {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 1rem;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.social-btn:hover {
+    background: var(--secondary);
+    transform: translateY(-3px);
+}
+
+/* Links groups */
+.footer-links-group h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1.25rem;
+    position: relative;
+    padding-bottom: 0.6rem;
+}
+
+.footer-links-group h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 28px;
+    height: 2px;
+    background: var(--secondary);
+    border-radius: 1px;
+}
+
+.footer-links-group ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+}
+
+.footer-links-group li,
+.footer-links-group li a {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+    transition: var(--transition);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer-links-group li a:hover {
+    color: var(--secondary-light);
+    padding-left: 4px;
+}
+
+/* Footer bottom */
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.55);
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-bottom-links a {
+    color: rgba(255, 255, 255, 0.55);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer-bottom-links a:hover {
+    color: var(--secondary-light);
+}
+
+@media (max-width: 900px) {
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-top {
+        grid-template-columns: 1fr;
+        padding: 2.5rem 1.5rem 2rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* ─── FARMER FEEDBACK SECTION ──────────────────────────────────── */
+.footer-feedback-section {
+    background: rgba(255, 255, 255, 0.06);
+    border-top: 1px solid rgba(255,255,255,0.12);
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    padding: 2.5rem 1.5rem;
+}
+
+.ffb-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.ffb-icon {
+    font-size: 2.2rem;
+    background: rgba(255,255,255,0.1);
+    border-radius: 14px;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.ffb-title-group h3 {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.ffb-title-group p {
+    color: rgba(255,255,255,0.65);
+    font-size: 0.88rem;
+}
+
+.ffb-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ffb-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.ffb-input,
+.ffb-textarea {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 12px;
+    padding: 0.8rem 1rem;
+    color: white;
+    font-size: 0.9rem;
+    outline: none;
+    transition: 0.2s;
+    font-family: inherit;
+    resize: vertical;
+}
+
+.ffb-input::placeholder,
+.ffb-textarea::placeholder {
+    color: rgba(255,255,255,0.45);
+}
+
+.ffb-input:focus,
+.ffb-textarea:focus {
+    border-color: rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.15);
+}
+
+.ffb-rating-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.ffb-rating-label {
+    color: rgba(255,255,255,0.7);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-right: 4px;
+}
+
+.ffb-star {
+    font-size: 1.8rem;
+    color: rgba(255,255,255,0.3);
+    cursor: pointer;
+    transition: all 0.15s;
+    line-height: 1;
+}
+
+.ffb-star.active {
+    color: #fbbf24;
+    text-shadow: 0 0 10px rgba(251,191,36,0.4);
+}
+
+.ffb-rating-text {
+    font-size: 0.85rem;
+    color: #fbbf24;
+    font-weight: 700;
+    margin-left: 8px;
+}
+
+.ffb-submit-btn {
+    align-self: flex-start;
+    padding: 0.8rem 2rem;
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.25s;
+    box-shadow: 0 4px 15px rgba(22, 163, 74, 0.3);
+}
+
+.ffb-submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(22, 163, 74, 0.45);
+}
+
+.ffb-success {
+    background: rgba(34, 197, 94, 0.15);
+    border: 1px solid rgba(34, 197, 94, 0.35);
+    border-radius: 14px;
+    padding: 1.2rem 1.5rem;
+    color: #bbf7d0;
+    font-size: 1rem;
+    font-weight: 600;
+    animation: slideDown 0.4s ease forwards;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+    .ffb-row { grid-template-columns: 1fr; }
+    .ffb-submit-btn { width: 100%; justify-content: center; }
+}

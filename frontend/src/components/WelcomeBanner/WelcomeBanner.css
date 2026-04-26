@@ -1,0 +1,255 @@
+.wb-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(8px);
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeInOverlay 0.4s ease-out forwards;
+}
+
+@keyframes fadeInOverlay {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.wb-card {
+    position: relative;
+    width: 90%;
+    max-width: 440px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 28px;
+    box-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    animation: slideUpModal 0.6s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    transform: translateY(40px);
+    opacity: 0;
+}
+
+@keyframes slideUpModal {
+    from {
+        transform: translateY(60px) scale(0.92);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+.wb-header-img {
+    height: 160px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.wb-glass-glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.3), transparent);
+    z-index: 1;
+}
+
+.farmer-card .wb-header-img {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.expert-card .wb-header-img {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+}
+
+.wb-avatar {
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.8rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transform: translateY(50px);
+    border: 5px solid rgba(255, 255, 255, 0.9);
+    z-index: 2;
+}
+
+.wb-content {
+    padding: 4rem 2.5rem 2.5rem;
+    text-align: center;
+}
+
+.wb-title {
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.wb-name {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #1e293b;
+    margin-bottom: 1.5rem;
+    letter-spacing: -1px;
+}
+
+.wb-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    background: rgba(248, 250, 252, 0.5);
+    border-radius: 20px;
+    padding: 1.25rem;
+    margin-bottom: 2rem;
+    text-align: left;
+    border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.wb-detail-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.wb-icon {
+    font-size: 1.4rem;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.wb-text {
+    font-size: 1rem;
+    color: #334155;
+    font-weight: 600;
+}
+
+.wb-msg {
+    font-size: 0.95rem;
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+/* Quick Actions */
+.wb-quick-actions {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.qa-label {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #94a3b8;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+    padding-left: 0.25rem;
+}
+
+.qa-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+}
+
+.qa-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.85rem;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #475569;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.qa-btn:hover {
+    background: #f8fafc;
+    border-color: #cbd5e1;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.qa-btn span {
+    font-size: 1.2rem;
+}
+
+.wb-btn {
+    width: 100%;
+    padding: 1.1rem;
+    border: none;
+    border-radius: 18px;
+    font-weight: 900;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    letter-spacing: 0.5px;
+}
+
+.farmer-card .wb-btn {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    box-shadow: 0 12px 24px rgba(5, 150, 105, 0.3);
+}
+
+.farmer-card .wb-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(5, 150, 105, 0.45);
+}
+
+.expert-card .wb-btn {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    color: white;
+    box-shadow: 0 12px 24px rgba(37, 99, 235, 0.3);
+}
+
+.expert-card .wb-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.45);
+}
+
+.wb-close {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    width: 36px;
+    height: 36px;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+    z-index: 10;
+}
+
+.wb-close:hover {
+    background: rgba(0, 0, 0, 0.2);
+    transform: rotate(90deg);
+}

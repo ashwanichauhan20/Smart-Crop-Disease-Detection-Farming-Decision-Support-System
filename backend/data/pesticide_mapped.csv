@@ -1,0 +1,72 @@
+Disease,Pesticide,Organic,Nutrient,Fertilizer,Dosage
+Algal Leaf Spot (Jackfruit),"Dimethoate, Chlorpyrifos",Horticultural Oil,Nitrogen,Urea,"Basal: 75 kg/ha | Top: 75 kg/ha"
+Anthracnose (Mango),"Imidacloprid, Thiamethoxam",Copper Fungicide,Phosphorus,DAP,"Basal: 100 kg/ha"
+Aphids (Cotton),"Imidacloprid, Acetamiprid",Insecticidal Soap,Potassium,MOP,"Basal: 50 kg/ha"
+Apple scab (Apple),"Malathion, Spinosad",Baking Soda,Zinc,Zinc Sulphate,"Basal: 50 kg/ha | Foliar: 0.5%"
+Bacterial Blight (Cotton),"Malathion, Spinosad",Compost Tea,Boron,Borax,"Basal: 10 kg/ha | Foliar: 0.3%"
+Bacterial Canker (Mango),"Imidacloprid, Thiamethoxam",Horticultural Oil,Calcium,Calcium Nitrate,"Basal: 200 kg/ha"
+Bacterial Leaf Spot (Pumpkin),"Dimethoate, Chlorpyrifos",Compost Tea,Magnesium,Magnesium Sulphate,"Foliar: 2%"
+Bacterial spot (Peach),"Dimethoate, Chlorpyrifos",Baking Soda,Sulfur,Gypsum,"Basal: 400 kg/ha"
+"Bacterial spot (Pepper, bell)","Dimethoate, Chlorpyrifos",Insecticidal Soap,Nitrogen,Urea,"Basal: 50 kg/ha"
+Bacterial spot (Tomato),"Dimethoate, Chlorpyrifos",Neem Oil,Zinc,Zinc Sulphate,"Basal: 50 kg/ha"
+BacterialBlights (Sugarcane),"Malathion, Spinosad",Garlic/Chili,Nitrogen,Urea,"Basal: 275 kg/ha"
+Black Rot (Cauliflower),"Chlorantraniliprole, Flubendiamide",Horticultural Oil,Phosphorus,SSP,"Basal: 375 kg/ha"
+Black Spot (Jackfruit),"Dimethoate, Chlorpyrifos",Insecticidal Soap,Potassium,MOP,"Basal: 112 kg/ha"
+Black rot (Apple),"Chlorantraniliprole, Flubendiamide",Insecticidal Soap,Micronutrients,Mix,"Basal: 20 kg/ha"
+Black rot (Grape),"Chlorantraniliprole, Flubendiamide",Neem Oil,Iron,Ferrous Sulphate,"Basal: 100 kg/ha"
+BrownSpot (Rice),"Emamectin benzoate, Fipronil",Garlic/Chili,Silicon,Rice husk ash,"Basal: 100 kg/ha"
+Cedar apple rust (Apple),"Malathion, Spinosad",Copper Fungicide,Potassium,MOP,"Basal: 60-80 kg/ha"
+Cercospora leaf spot Gray leaf spot (Corn (maize)),"Dimethoate, Chlorpyrifos",Neem Oil,Nitrogen,Urea,"Basal: 100 kg/ha"
+Common rust (Corn (maize)),"Chlorpyrifos, Emamectin benzoate",Copper Fungicide,Phosphorus,DAP,"Basal: 60 kg/ha"
+Cutting Weevil (Mango),"Chlorpyrifos, Cyfluthrin",Garlic/Chili,Silicon,Calcium Silicate,"Basal: 100 kg/ha"
+Die Back (Mango),"Imidacloprid, Thiamethoxam",Insecticidal Soap,Nitrogen,Urea,"Basal: 1 kg/tree"
+Downy Mildew (Pumpkin),"Chlorothalonil, Mancozeb",Insecticidal Soap,Potassium,MOP,"Basal: 1.5 kg/tree"
+Early blight (Potato),"Chlorothalonil, Mancozeb",Neem Oil,Nitrogen,Urea,"Basal: 60 kg/ha | Top: 60 kg/ha"
+Early blight (Tomato),"Chlorothalonil, Mancozeb",Garlic/Chili,Phosphorus,SSP,"Basal: 120 kg/ha"
+Esca (Black Measles) (Grape),"Chlorantraniliprole, Flubendiamide",Neem Oil,Potassium,MOP,"Basal: 60 kg/ha | Top: 60 kg/ha"
+Gall Midge (Mango),"Chlorpyrifos, Malathion",Horticultural Oil,Magnesium,Magnesium Sulphate,"Basal: 60 kg/ha"
+Haunglongbing (Citrus greening) (Orange),"Carbaryl, Malathion",Compost Tea,Zinc,Zinc Sulphate,"Foliar: 0.5%"
+Healthy (Cauliflower),None,Good watering,N-P-K (General),Compost,As needed
+Healthy (Cotton),None,Good watering,N-P-K (General),Compost,As needed
+Healthy (Jackfruit),None,Good watering,N-P-K (General),Compost,As needed
+Healthy (Mango),None,Good watering,N-P-K (General),Compost,As needed
+Healthy (Rice),None,Good watering,N-P-K (General),Compost,As needed
+Healthy (Sugarcane),None,Good watering,N-P-K (General),Compost,As needed
+Healthy Leaf (Pumpkin),None,Good watering,N-P-K (General),Compost,As needed
+Hispa (Rice),"Emamectin benzoate, Fipronil",Compost Tea,Boron,Boric acid,"Foliar: 0.2%"
+Late blight (Potato),"Chlorothalonil, Mancozeb",Compost Tea,Nitrogen,Urea,"Basal: 75 kg/ha"
+Late blight (Tomato),"Chlorothalonil, Mancozeb",Insecticidal Soap,Zinc,Zinc Sulphate,"Basal: 50 kg/ha"
+Leaf Mold (Tomato),"Chlorpyrifos, Imidacloprid",Horticultural Oil,Silicon,Rice husk ash,"Basal: 100 kg/ha"
+Leaf blight (Isariopsis Leaf Spot) (Grape),"Dimethoate, Chlorpyrifos",Compost Tea,Nitrogen,Urea,"Basal: 20-60 g/vine"
+Leaf scorch (Strawberry),"Chlorpyrifos, Imidacloprid",Garlic/Chili,Phosphorus,DAP,"Basal: 8-24 g/vine"
+LeafBlast (Rice),"Emamectin benzoate, Fipronil",Neem Oil,Potassium,MOP,"Basal: 30-60 g/vine"
+Mosaic (Sugarcane),"Malathion, Spinosad",Neem Oil,Boron,Boric acid,"Foliar: 0.1%"
+Mosaic Disease (Pumpkin),"Malathion, Spinosad",Baking Soda,Zinc,ZnSO4,"Foliar: 0.2%"
+Northern Leaf Blight (Corn (maize)),"Chlorpyrifos, Emamectin benzoate",Garlic/Chili,Nitrogen,Urea,"Basal: 500 g/tree"
+Powdery Mildew (Cotton),"Malathion, Spinosad",Horticultural Oil,Phosphorus,SSP,"Basal: 1 kg/tree"
+Powdery Mildew (Mango),"Imidacloprid, Thiamethoxam",Neem Oil,Potassium,MOP,"Basal: 1 kg/tree"
+Powdery Mildew (Pumpkin),"Chlorothalonil, Mancozeb",Copper Fungicide,Nitrogen,Urea,"Basal: 8 g/plant"
+Powdery mildew (Cherry (including sour)),"Malathion, Spinosad",Horticultural Oil,Phosphorus,DAP,"Basal: 8 g/plant"
+RedRot (Sugarcane),"Bifenthrin, Spiromesifen",Neem Oil,Potassium,MOP,"Basal: 8 g/plant"
+Rust (Sugarcane),"Malathion, Spinosad",Insecticidal Soap,Nitrogen,Urea,"Basal: 10 g/pit"
+Septoria leaf spot (Tomato),"Dimethoate, Chlorpyrifos",Baking Soda,Phosphorus,SSP,"Basal: 100g/pit"
+Sooty Mould (Mango),"Imidacloprid, Thiamethoxam",Neem Oil,Potassium,MOP,"Basal: 100g/pit"
+Spider mites Two-spotted spider mite (Tomato),"Dimethoate, Chlorpyrifos",Neem Oil,Triacontanol,EC,"Foliar: 1.25 ppm"
+Target Spot (Tomato),"Dimethoate, Chlorpyrifos",Copper Fungicide,KNO3,Foliar,"Foliar: 2%"
+Target spot (Cotton),"Dimethoate, Chlorpyrifos",Insecticidal Soap,Calcium,Lime,"Basal: 200 kg/ha"
+Tomato Yellow Leaf Curl Virus (Tomato),"Chlorpyrifos, Imidacloprid",Garlic/Chili,Sulfur,Wettable S,"Foliar: 3g/L"
+Tomato mosaic virus (Tomato),"Malathion, Spinosad",Copper Fungicide,Vermicompost,Organic,"Basal: 500 kg/ha"
+Unknown Disease,"Chlorothalonil, Mancozeb",Copper Fungicide,FYM,Organic,"Basal: 12.5 t/ha"
+Yellow (Sugarcane),"Malathion, Spinosad",Copper Fungicide,Neem Cake,Organic,"Basal: 250 kg/ha"
+healthy (Apple),None,Good watering,N-P-K (General),Compost,As needed
+healthy (Blueberry),None,Good watering,N-P-K (General),Compost,As needed
+healthy (Cherry (including sour)),None,Good watering,N-P-K (General),Compost,As needed
+healthy (Corn (maize)),None,Good watering,N-P-K (General),Compost,As needed
+healthy (Grape),None,Good watering,N-P-K (General),Compost,As needed
+healthy (Peach),None,Good watering,N-P-K (General),Compost,As needed
+"healthy (Pepper, bell)",None,Good watering,N-P-K (General),Compost,As needed
+healthy (Potato),None,Good watering,N-P-K (General),Compost,As needed
+healthy (Raspberry),None,Good watering,N-P-K (General),Compost,As needed
+healthy (Soybean),None,Good watering,N-P-K (General),Compost,As needed
+healthy (Strawberry),None,Good watering,N-P-K (General),Compost,As needed
+healthy (Tomato),None,Good watering,N-P-K (General),Compost,As needed

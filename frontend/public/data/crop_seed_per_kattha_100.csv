@@ -1,0 +1,121 @@
+crop,category,soil,season,seed_per_kattha,seed_unit,yield_quintal_per_bigha,profit_rating,notes
+Dhan (Paddy),Cereals,"Black,Loamy",Kharif,250.0,gram,8.0,High,Nursery mai pehle boi; transplanting method se lagao; Black/Loamy soil best; sandy mai 30% kam yield
+Makka (Maize),Cereals,"Black,Sandy,Loamy",Kharif,75.0,gram,10.0,High,Hybrid seed use karo; 75g/kattha = 1.5kg/bigha; sabhi soil types chalte hain; irrigation zaroori
+Jwar (Sorghum),Cereals,"Black,Red,Sandy",Kharif,60.0,gram,8.0,Very High,60g/kattha = 1.2kg/bigha; drought tolerant; Sandy aur Red soil best; kam paani chahiye
+Bajra (Pearl Millet),Cereals,"Sandy,Red",Kharif,37.0,gram,6.0,High,37g/kattha = 750g/bigha; Sandy soil champion; heatwave tolerant; kam paani; UP/Rajasthan ke liye best
+Arhar (Pigeon Pea),Pulses,"Black,Red",Kharif,100.0,gram,4.0,Very High,100g/kattha = 2kg/bigha; 150-180 din ki crop; excellent MSP; Black soil best; nitrogen fix karta hai
+Moong (Green Gram),Pulses,"Sandy,Loamy",Kharif,125.0,gram,3.0,Very High,125g/kattha = 2.5kg/bigha; sirf 60-75 din; saal mai 2 crops possible; Sandy Loamy best
+Urad (Black Gram),Pulses,"Black,Loamy",Kharif,125.0,gram,3.0,High,125g/kattha = 2.5kg/bigha; MSP acha; multiple harvesting; Black Loamy soil best
+Soyabean (Soybean),Oilseeds,"Black,Loamy",Kharif,400.0,gram,6.0,Very High,400g/kattha = 8kg/bigha; Black soil champion; MP/Maharashtra main crop; good MSP
+Moongphali (Groundnut),Oilseeds,"Sandy,Red",Kharif,1.25,kg,8.0,Excellent,1.25kg/kattha = 25kg/bigha (shell sahi); Sandy soil ke liye sabse best crop; high profit
+Kapas (Cotton),Fiber Crops,Black,Kharif,37.0,gram,5.0,Very High,37g/kattha = 750g/bigha; sirf Black soil mai best; BT cotton hybrid use karo; high input cost
+Ganna (Sugarcane),Fiber Crops,"Black,Loamy",Kharif,12.5,kg,200.0,Excellent,12.5kg/kattha = 250kg/bigha (seed pieces/ganne ke tukde); irrigation zaroori; 10-12 mahine
+Jute (Jute),Fiber Crops,"Loamy,Black",Kharif,300.0,gram,12.0,Excellent,300g/kattha = 6kg/bigha; Loamy soil essential; West Bengal/Bihar popular; waterlogging tolerate
+Sanai (Sunn Hemp),Fiber Crops,"Loamy,Sandy",Kharif,300.0,gram,8.0,Medium,300g/kattha = 6kg/bigha; green manure ke liye bhi use; loamy sandy soil; fiber industry demand
+Til (Sesame),Oilseeds,"Sandy,Red",Kharif,75.0,gram,3.0,Excellent,75g/kattha = 1.5kg/bigha; premium price ₹10000-18000/quintal; Sandy/Red soil ideal; kam paani
+Ragi (Finger Millet),Cereals,"Red,Sandy",Kharif,75.0,gram,6.0,Very High,75g/kattha = 1.5kg/bigha; Millets boom; Red/Sandy soil ideal; low water; superfood demand
+Lobia (Cowpea),Pulses,"Sandy,Red",Kharif,300.0,gram,4.0,Medium,300g/kattha = 6kg/bigha; grain + fodder dual use; Sandy soil; 75-90 din; kam input cost
+Gwar (Cluster Bean),Pulses,"Sandy,Red",Kharif,250.0,gram,4.0,High,250g/kattha = 5kg/bigha; Sandy soil best; guar gum industry; export hota hai; drought tolerant
+Bhindi (Lady Finger),Vegetables,"Sandy,Loamy",Kharif,150.0,gram,20.0,Very High,150g/kattha = 3kg/bigha; 50-60 din; multiple pickings; Sandy Loamy soil; local market high demand
+Baigan (Brinjal),Vegetables,"Loamy,Black",Kharif,5.0,gram,40.0,Very High,5g/kattha = 100g/bigha; nursery mai pehle seedling taiyar karo; transplanting se lagao; Loamy Black soil
+Tamatar (Tomato),Vegetables,"Loamy,Sandy",Kharif,5.0,gram,80.0,Exceptional,5g/kattha = 100g/bigha; nursery seedling taiyar karo; high risk high reward; price volatile
+Mirch (Chilli),Vegetables,"Loamy,Sandy",Kharif,5.0,gram,15.0,Exceptional,5g/kattha = 100g/bigha; nursery se transplant karo; dry chilli premium price; loamy soil best
+Kheera (Cucumber),Vegetables,"Sandy,Loamy",Kharif,50.0,gram,30.0,Medium,50g/kattha = 1kg/bigha; 50-70 din; Sandy Loamy; local market; low price par high yield
+Lauki (Bottle Gourd),Vegetables,"Sandy,Loamy",Kharif,50.0,gram,40.0,Medium,50g/kattha = 1kg/bigha; steady local demand; creeper support chahiye; Sandy Loamy soil
+Tori (Ridge Gourd),Vegetables,"Sandy,Loamy",Kharif,50.0,gram,20.0,Medium,50g/kattha = 1kg/bigha; Sandy Loamy soil; local market; summer demand; creeper support zaroori
+Karela (Bitter Gourd),Vegetables,"Loamy,Sandy",Kharif,100.0,gram,15.0,Very High,100g/kattha = 2kg/bigha; premium price; medicinal crop; Loamy Sandy soil; multiple pickings
+Kaddu (Pumpkin),Vegetables,"Sandy,Loamy",Kharif,75.0,gram,40.0,High,75g/kattha = 1.5kg/bigha; low input cost; good yield; Sandy area ke liye useful
+Tarbooj (Watermelon),Fruits,"Sandy,Loamy",Kharif,25.0,gram,60.0,Very High,25g/kattha = 500g/bigha; Sandy soil ideal; summer mai high demand; irrigation chahiye
+Kharbooja (Muskmelon),Fruits,"Sandy,Loamy",Kharif,25.0,gram,40.0,High,25g/kattha = 500g/bigha; Sandy soil; summer crop; export potential; good market price
+Adrak (Ginger),Vegetables,"Loamy,Black",Kharif,4.0,kg,20.0,Exceptional,4kg/kattha = 80kg/bigha (rhizome/beej tukde); loamy rich soil essential; high investment par bahut acha return
+Haldi (Turmeric),Vegetables,"Loamy,Black",Kharif,4.0,kg,18.0,Exceptional,4kg/kattha = 80kg/bigha (rhizome/beej tukde); Loamy Black soil essential; 210-270 din; medicinal demand
+Hari Mirch (Green Chilli),Vegetables,"Loamy,Sandy",Kharif,5.0,gram,12.0,High,5g/kattha = 100g/bigha; nursery seedling taiyar karo; Loamy Sandy; multiple pickings; fresh market
+Sem (Beans),Vegetables,"Loamy,Sandy",Kharif,400.0,gram,8.0,Medium,400g/kattha = 8kg/bigha; climbing variety; support chahiye; Loamy soil best; 60-80 din
+Shakarkand (Sweet Potato),Vegetables,"Sandy,Loamy",Kharif,1.0,kg,25.0,Very High,1kg/kattha = 20kg/bigha (vine cuttings); Sandy soil ideal; nutritious; steady price; 120-150 din
+Arbi (Colocasia),Vegetables,"Loamy,Black",Kharif,1.0,kg,20.0,Very High,1kg/kattha = 20kg/bigha (corm/ghandia); shade tolerant; Loamy Black soil; good local demand; 180-210 din
+Madua (Barnyard Millet),Cereals,"Red,Sandy",Kharif,100.0,gram,5.0,High,100g/kattha = 2kg/bigha; Millets boom; Red/Sandy soil; low water; good mandi price
+Kuttu (Buckwheat),Cereals,"Sandy,Loamy",Kharif,100.0,gram,5.0,Medium,100g/kattha = 2kg/bigha; Navratri demand spike; Sandy Loamy; hilly areas popular; niche market
+Chawal (Aromatic Rice),Cereals,"Black,Loamy",Kharif,200.0,gram,7.0,Very High,200g/kattha = 4kg/bigha; nursery mai seedling taiyar; premium basmati price; export market
+Kala Chana (Black Chickpea),Pulses,"Black,Red",Kharif,750.0,gram,4.0,High,750g/kattha = 15kg/bigha; good MSP; Black/Red soil; Kharif pulse; protein rich
+Rajma (Kidney Beans),Pulses,"Loamy,Black",Kharif,500.0,gram,4.0,Very High,500g/kattha = 10kg/bigha; premium market price; cool climate best; Loamy Black soil; hilly areas
+Surajmukhi-Kharif (Sunflower),Oilseeds,"Loamy,Black",Kharif,75.0,gram,5.0,Very High,75g/kattha = 1.5kg/bigha; hybrid varieties better; good MSP; Loamy Black soil; edible oil crop
+Kusum-Kharif (Safflower),Oilseeds,"Black,Red",Kharif,400.0,gram,4.0,High,400g/kattha = 8kg/bigha; drought tolerant; Black/Red soil; 120-150 din; oil + dye use
+Tambaku (Tobacco),Other,"Loamy,Black",Kharif,5.0,gram,8.0,High,5g/kattha = 100g/bigha; nursery transplanting method; Loamy Black; curing process zaroori; Andhra/Gujarat
+Palak-Kharif (Spinach),Vegetables,"Loamy,Sandy",Kharif,250.0,gram,12.0,Medium,250g/kattha = 5kg/bigha; 40-50 din quick crop; 3-4 cuts/season; easy; low investment
+Methi-Kharif (Fenugreek),Vegetables,"Loamy,Sandy",Kharif,600.0,gram,8.0,Medium,600g/kattha = 12kg/bigha; dual use leaf + seed; 30-40 din; low investment; local demand
+Dhaniya-Kharif (Coriander),Vegetables,"Loamy,Sandy",Kharif,300.0,gram,4.0,Medium,300g/kattha = 6kg/bigha; leaf coriander; 40-50 din; Loamy Sandy; local market; kitchen garden
+Chaulai (Amaranth),Cereals,"Sandy,Loamy",Kharif,25.0,gram,8.0,Very High,25g/kattha = 500g/bigha; bahut kam seed; superfood demand; drought tolerant; good mandi price
+Kela (Banana),Fruits,"Loamy,Black",Kharif,10.0,plants,200.0,Exceptional,10 plants/kattha = 200 plants/bigha; tissue culture plants best; Loamy Black; irrigation zaroori; excellent return
+Papita (Papaya),Fruits,"Loamy,Sandy",Kharif,25.0,gram,80.0,Exceptional,25g/kattha = 500g/bigha seedlings ya 1-1.5 month old nursery plants lagao; 8-9 mahine mai fruiting
+Nariyal (Coconut),Fruits,"Sandy,Loamy",Kharif,1.0,plants,50.0,High,1 plant/kattha = 14-20 plants/bigha; coastal Sandy soil best; 5-7 saal baad fruiting; long-term income
+Aam (Mango),Fruits,"Loamy,Black",Kharif,1.0,plants,80.0,Very High,1 plant/kattha = 16-20 plants/bigha; grafted variety lao; Loamy Black; 4-5 saal baad fruiting
+Gehun (Wheat),Cereals,"Black,Loamy",Rabi,2.0,kg,12.0,Very High,2kg/kattha = 40kg/bigha; Rabi ka sabse popular crop; Loamy Black soil best; 4-6 irrigations; excellent MSP
+Jau (Barley),Cereals,"Sandy,Loamy",Rabi,1.75,kg,10.0,High,1.75kg/kattha = 35kg/bigha; hardy crop; Sandy soil suitable; low input cost; animal feed + industry
+Chana (Chickpea),Pulses,"Black,Loamy",Rabi,1.0,kg,5.0,Very High,1kg/kattha = 20kg/bigha; best Rabi pulse; excellent MSP; Loamy Black ideal; less irrigation needed
+Matar (Pea),Pulses,"Loamy,Sandy",Rabi,500.0,gram,8.0,High,500g/kattha = 10kg/bigha; vegetable pea premium price; 90 din; Loamy Sandy; frozen pea industry demand
+Masoor (Lentil),Pulses,"Loamy,Black",Rabi,750.0,gram,4.0,High,750g/kattha = 15kg/bigha; low water need; good MSP; dry farming possible; North India popular
+Sarson (Mustard),Oilseeds,"Loamy,Sandy",Rabi,50.0,gram,5.0,Very High,50g/kattha = 1kg/bigha; bahut kam seed chahiye; excellent MSP; UP/Rajasthan/MP main Rabi oilseed crop
+Alsi (Linseed),Oilseeds,"Black,Loamy",Rabi,300.0,gram,3.0,High,300g/kattha = 6kg/bigha; dual use oil + fiber; low input cost; steady demand; Loamy Black soil
+Surajmukhi-Rabi (Sunflower),Oilseeds,"Loamy,Black",Rabi,75.0,gram,5.0,Very High,75g/kattha = 1.5kg/bigha; hybrid varieties better; good MSP; Loamy Black; edible oil demand
+Kusum-Rabi (Safflower),Oilseeds,"Black,Red",Rabi,400.0,gram,4.0,High,400g/kattha = 8kg/bigha; drought tolerant; Black/Red soil; Maharashtra/Karnataka popular; 120-150 din
+Aloo (Potato),Vegetables,"Loamy,Sandy",Rabi,4.0,kg,50.0,Very High,4kg/kattha = 80kg/bigha (seed potato tukde); Loamy Sandy best; UP/Bihar main crop; cold storage zaroor
+Pyaz (Onion),Vegetables,"Loamy,Black",Rabi,75.0,gram,30.0,Very High,75g/kattha = 1.5kg/bigha; transplanting method; Loamy Black soil; Maharashtra/UP; price volatile but demand high
+Lahsun (Garlic),Vegetables,"Loamy,Sandy",Rabi,4.0,kg,20.0,Exceptional,4kg/kattha = 80kg/bigha (garlic cloves/kaliyan); Loamy Sandy best; 150-180 din; exceptional profit potential
+Dhaniya-Rabi (Coriander),Oilseeds,"Loamy,Sandy",Rabi,300.0,gram,4.0,Very High,300g/kattha = 6kg/bigha; seed coriander excellent MSP price; Loamy soil best; Rajasthan biggest producer
+Methi-Rabi (Fenugreek),Vegetables,"Loamy,Sandy",Rabi,600.0,gram,8.0,Medium,600g/kattha = 12kg/bigha; dual use leaf + seed; Rabi season main crop; low investment; local demand
+Jeera (Cumin),Oilseeds,"Sandy,Loamy",Rabi,100.0,gram,2.5,Excellent,100g/kattha = 2kg/bigha; very high price ₹15000-25000/quintal; dry areas best; Rajasthan/Gujarat dominant
+Gajar (Carrot),Vegetables,"Sandy,Loamy",Rabi,100.0,gram,30.0,High,100g/kattha = 2kg/bigha; Sandy Loamy ideal; export quality; 90-120 din; cold season crop; consistent market
+Mooli (Radish),Vegetables,"Sandy,Loamy",Rabi,75.0,gram,20.0,Low-Medium,75g/kattha = 1.5kg/bigha; very quick 30-45 din; gap filler crop; easy to grow; low market price
+Chukandar (Beetroot),Vegetables,"Loamy,Sandy",Rabi,100.0,gram,25.0,High,100g/kattha = 2kg/bigha; growing urban demand; Loamy Sandy; good metro city price; 90-120 din
+Shalgam (Turnip),Vegetables,"Sandy,Loamy",Rabi,50.0,gram,20.0,Low-Medium,50g/kattha = 1kg/bigha; quick 60-90 din; low market price; animal fodder bhi kaam aata hai
+Pattagobhi (Cabbage),Vegetables,"Loamy,Black",Rabi,5.0,gram,60.0,High,5g/kattha = 100g/bigha; nursery seedling taiyar karo; transplanting se lagao; Loamy Black; heavy yield
+Phoolgobi (Cauliflower),Vegetables,"Loamy,Black",Rabi,5.0,gram,40.0,Very High,5g/kattha = 100g/bigha; nursery se transplant karo; Loamy essential; popular vegetable; good price
+Broccoli (Broccoli),Vegetables,"Loamy,Black",Rabi,5.0,gram,20.0,Exceptional,5g/kattha = 100g/bigha; nursery seedling taiyar karo; premium urban/export market; ₹2000-4000/quintal
+Palak-Rabi (Spinach),Vegetables,"Loamy,Sandy",Rabi,250.0,gram,15.0,Medium,250g/kattha = 5kg/bigha; 40-60 din; 3-4 cuts/season; year-round demand; easy low-input crop
+Salad (Lettuce),Vegetables,"Loamy,Sandy",Rabi,25.0,gram,10.0,Medium,25g/kattha = 500g/bigha; urban/restaurant demand; cool climate best; niche market; 50-70 din
+Tamatar-Rabi (Tomato),Vegetables,"Loamy,Sandy",Rabi,5.0,gram,80.0,Exceptional,5g/kattha = 100g/bigha; nursery seedling 30 din mai taiyar karo; Rabi version better quality; price stable
+Baigan-Rabi (Brinjal),Vegetables,"Loamy,Black",Rabi,5.0,gram,40.0,Very High,5g/kattha = 100g/bigha; nursery se transplant; year-round crop; Loamy Black; steady long-term income
+Mirch-Rabi (Chilli),Vegetables,"Loamy,Sandy",Rabi,5.0,gram,15.0,Exceptional,5g/kattha = 100g/bigha; nursery transplant method; dry chilli high value; 120-180 din; high return
+Shimla Mirch (Capsicum),Vegetables,"Loamy,Sandy",Rabi,4.0,gram,20.0,Exceptional,4g/kattha = 80g/bigha; nursery se transplant; high value ₹2000-5000/quintal; polyhouse mai aur zyada
+Matar-Rabi (Garden Pea),Pulses,"Loamy,Sandy",Rabi,500.0,gram,8.0,High,500g/kattha = 10kg/bigha; fresh green pea; Loamy Sandy soil; 60-75 din; frozen pea industry demand
+Sem-Rabi (Broad Beans),Vegetables,"Loamy,Sandy",Rabi,600.0,gram,8.0,Medium,600g/kattha = 12kg/bigha; climbing variety; Loamy Sandy; cool Rabi season; local market demand; 90-120 din
+French Bean (French Beans),Vegetables,"Loamy,Sandy",Rabi,600.0,gram,8.0,High,600g/kattha = 12kg/bigha; export quality; Loamy essential; 60-80 din; hotel/restaurant demand
+Kheera-Rabi (Cucumber),Vegetables,"Sandy,Loamy",Rabi,50.0,gram,30.0,Medium,50g/kattha = 1kg/bigha; Rabi version better quality; Sandy Loamy; local market; 60-80 din
+Tarbooj-Rabi (Watermelon),Fruits,"Sandy,Loamy",Rabi,25.0,gram,60.0,Very High,25g/kattha = 500g/bigha; off-season tarbooj premium price milti hai; Sandy Loamy; irrigation zaroori
+Kharbooja-Rabi (Muskmelon),Fruits,"Sandy,Loamy",Rabi,25.0,gram,40.0,High,25g/kattha = 500g/bigha; Sandy soil; off-season mai better price; good market demand; 80-100 din
+Strawberry (Strawberry),Fruits,"Loamy,Sandy",Rabi,1.0,plants,10.0,Exceptional,1 plant/kattha = 20 plants/bigha; runners se propagation; cool climate zaroori; ₹5000-10000/quintal; direct selling best
+Rai (Black Mustard),Oilseeds,"Loamy,Sandy",Rabi,50.0,gram,4.0,High,50g/kattha = 1kg/bigha; Sarson se thodi alag; Loamy Sandy soil; 90-110 din; good oilseed + condiment crop
+Toria (Toria),Oilseeds,"Loamy,Sandy",Rabi,75.0,gram,4.0,High,75g/kattha = 1.5kg/bigha; quick 75-90 din; Rabi oilseed; Loamy Sandy; early sowing best; quick return
+Taramira (Rocket Salad),Oilseeds,"Sandy,Loamy",Rabi,100.0,gram,3.0,Medium,100g/kattha = 2kg/bigha; dry area crop; Sandy Loamy; oil + salad use; Rajasthan/Haryana popular
+Khaskhas (Poppy),Oilseeds,"Loamy,Black",Rabi,50.0,gram,1.5,Excellent,50g/kattha = 1kg/bigha; very high price ₹40000-80000/quintal; sarkar se license lena zaroori; MP main producer
+Isabgol (Isabgol),Oilseeds,"Sandy,Loamy",Rabi,150.0,gram,3.0,Very High,150g/kattha = 3kg/bigha; medical/pharma demand; Sandy Loamy; Gujarat/Rajasthan popular; premium export price
+Ajwain (Ajwain),Oilseeds,"Loamy,Sandy",Rabi,150.0,gram,2.5,High,150g/kattha = 3kg/bigha; spice crop; Loamy Sandy; 120-150 din; Rajasthan/UP main producer; good price
+Saunf (Fennel),Oilseeds,"Loamy,Sandy",Rabi,150.0,gram,3.0,High,150g/kattha = 3kg/bigha; good spice price; Loamy Sandy; 150-180 din; Gujarat/Rajasthan; export potential
+Hing (Asafoetida),Other,"Sandy,Loamy",Rabi,25.0,gram,1.0,High,25g/kattha = 500g/bigha; very high market price; J&K/Himachal cool climate zaroori; long duration 3-4 saal
+Kesar (Saffron),Other,"Loamy,Sandy",Rabi,1.5,kg,0.02,Exceptional,1.5kg/kattha = 30kg/bigha (corms/bulbs); duniya ka sabse mehenga masala ₹2-4 lakh/kg; Kashmir only; cool climate
+Ganna-Rabi (Sugarcane),Fiber Crops,"Black,Loamy",Rabi,12.5,kg,200.0,Excellent,12.5kg/kattha = 250kg/bigha (ganne ke seed tukde); 10-12 mahine; Loamy Black; sugar mill contract best
+Jamun (Blackberry),Fruits,"Loamy,Black",Rabi,1.0,plants,40.0,High,1 plant/kattha = 12-16 plants/bigha; 3-4 saal baad fruiting; Loamy Black; medicinal demand; low maintenance
+Amrud (Guava),Fruits,"Loamy,Sandy",Rabi,1.0,plants,60.0,Very High,1 plant/kattha = 20 plants/bigha; 2-3 saal baad fruiting; Loamy Sandy; year-round harvest; high local + export demand
+Nimbu (Lemon),Fruits,"Loamy,Sandy",Rabi,1.0,plants,40.0,High,1 plant/kattha = 20 plants/bigha; 3-4 saal baad fruiting; year-round income; high demand; low maintenance
+Santra (Orange),Fruits,"Loamy,Black",Rabi,1.0,plants,60.0,Very High,1 plant/kattha = 16 plants/bigha; 4-5 saal baad fruiting; Nagpur variety premium; export potential; high long-term profit
+Tinda (Indian Round Gourd),Vegetables,"Sandy,Loamy",Kharif,50.0,gram,15.0,High,50g/kattha = 1kg/bigha; 55-65 din; North India local market mai high demand; Sandy Loamy soil; summer crop
+Tarbooj,Fruits,Loamy,Zaid,1500.0,gram,8.0,High,"Zaid crop, best in hot season with irrigation"
+Kharbooja,Fruits,Sandy,Zaid,1250.0,gram,7.0,High,"Zaid crop, best in hot season with irrigation"
+Kheera,Vegetables,Loamy,Zaid,1000.0,gram,6.0,High,"Zaid crop, best in hot season with irrigation"
+Kakdi,Vegetables,Sandy,Zaid,900.0,gram,5.5,High,"Zaid crop, best in hot season with irrigation"
+Lauki,Vegetables,Loamy,Zaid,1500.0,gram,9.0,High,"Zaid crop, best in hot season with irrigation"
+Tori,Vegetables,Loamy,Zaid,1250.0,gram,8.0,High,"Zaid crop, best in hot season with irrigation"
+Karela,Vegetables,Loamy,Zaid,1000.0,gram,7.0,High,"Zaid crop, best in hot season with irrigation"
+Bhindi,Vegetables,Loamy,Zaid,750.0,gram,6.0,High,"Zaid crop, best in hot season with irrigation"
+Tamatar,Vegetables,Loamy,Zaid,500.0,gram,10.0,High,"Zaid crop, best in hot season with irrigation"
+Mirch,Vegetables,Loamy,Zaid,400.0,gram,8.0,High,"Zaid crop, best in hot season with irrigation"
+Baingan,Vegetables,Loamy,Zaid,500.0,gram,9.0,High,"Zaid crop, best in hot season with irrigation"
+Palak,Leafy,Loamy,Zaid,2000.0,gram,5.0,High,"Zaid crop, best in hot season with irrigation"
+Methi,Leafy,Loamy,Zaid,1500.0,gram,4.0,High,"Zaid crop, best in hot season with irrigation"
+Dhaniya,Leafy,Loamy,Zaid,1500.0,gram,4.5,High,"Zaid crop, best in hot season with irrigation"
+Chaulai,Leafy,Loamy,Zaid,1250.0,gram,5.0,High,"Zaid crop, best in hot season with irrigation"
+Seem,Vegetables,Loamy,Zaid,2000.0,gram,6.0,High,"Zaid crop, best in hot season with irrigation"
+Parwal,Vegetables,Loamy,Zaid,2500.0,gram,7.0,High,"Zaid crop, best in hot season with irrigation"
+Kundru,Vegetables,Loamy,Zaid,2000.0,gram,6.0,High,"Zaid crop, best in hot season with irrigation"
+Kaddu,Vegetables,Loamy,Zaid,2500.0,gram,10.0,High,"Zaid crop, best in hot season with irrigation"
+Sweet Corn,Cereals,Loamy,Zaid,8000.0,gram,12.0,High,"Zaid crop, best in hot season with irrigation"

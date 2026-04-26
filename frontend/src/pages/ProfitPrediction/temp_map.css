@@ -1,0 +1,159 @@
+/* Results Column Layout */
+.results-detailed-grid {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 2rem;
+    margin-top: 2rem;
+    align-items: start;
+}
+
+@media (max-width: 1200px) {
+    .results-detailed-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .india-regional-map {
+        position: static !important;
+    }
+}
+
+/* India Regional Map Styling */
+.india-regional-map {
+    background: white;
+    border-radius: 24px;
+    padding: 1.5rem;
+    border: 1px solid #E8EAF6;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    position: sticky;
+    top: 2rem;
+    height: fit-content;
+}
+
+.map-card-header h4 {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.map-card-header p {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.india-map-visual {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4/5;
+    background: #FDFDFD;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #F0F2F5;
+}
+
+.map-silhouette {
+    position: absolute;
+    inset: 5%;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/e/e0/India_map_silhouette.svg') no-repeat center;
+    background-size: contain;
+    opacity: 0.08;
+    filter: brightness(0);
+}
+
+.map-overlay-points {
+    position: absolute;
+    inset: 0;
+}
+
+.map-point-wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 5;
+}
+
+.map-point {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.map-point-wrapper:hover .map-point {
+    transform: scale(1.6);
+    box-shadow: 0 0 12px currentColor;
+}
+
+.map-point-tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(0px);
+    background: rgba(38, 50, 56, 1);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 10;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.map-point-tooltip strong {
+    display: block;
+    color: var(--premium-amber, #FF8F00);
+    margin-bottom: 2px;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+}
+
+.famous-crop-name {
+    color: #ECEFF1;
+    font-weight: 500;
+}
+
+.map-point-wrapper:hover .map-point-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-8px);
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-fadeInLeft {
+    animation: fadeInLeft 0.6s ease-out forwards;
+}
+
+.animate-fadeInRight {
+    animation: fadeInRight 0.6s ease-out forwards;
+}

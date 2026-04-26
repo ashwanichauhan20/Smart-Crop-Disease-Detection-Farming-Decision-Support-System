@@ -1,0 +1,499 @@
+{
+    "Algal Leaf Spot (Jackfruit)": {
+        "pesticide": "Copper oxychloride 50WP @ 3g/L (TNAU)",
+        "organic": "Neem oil 5ml/L spray (ICAR)",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Anthracnose (Mango)": {
+        "pesticide": "Trifloxystrobin 25WG + Tebuconazole 50WG @ 0.04% (Indian Phytopathology 2019)",
+        "organic": "Pseudomonas fluorescens @ 5ml/L (ICAR-IIHR)",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Aphids (Cotton)": {
+        "pesticide": "Dimethoate 30EC @ 2ml/L (TNAU crop list)",
+        "organic": "Neem seed kernel extract (NSKE) 5% spray",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Apple scab (Apple)": {
+        "pesticide": "Captan 50WP @ 2.5kg/ha [TNAU Fungicide PDF]",
+        "organic": "Bordeaux mixture 1% (copper sulfate + lime)",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Bacterial Blight (Cotton)": {
+        "pesticide": "Streptomycin sulfate 90SP @ 0.5g/L (ICAR)",
+        "organic": "Hot water seed treatment 52\u00b0C for 30 min",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Bacterial Canker (Mango)": {
+        "pesticide": "Copper oxychloride 50WP @ 3g/L (TNAU)",
+        "organic": "Bordeaux mixture 1% spray",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Bacterial Leaf Spot (Pumpkin)": {
+        "pesticide": "Copper oxychloride 50WP @ 3g/L (TNAU)",
+        "organic": "Copper Bordeaux mixture 1%",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Bacterial spot (Peach)": {
+        "pesticide": "Copper hydroxide 77WP @ 2g/L (TNAU Fungicide PDF)",
+        "organic": "Bordeaux mixture 1% during dormancy",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Bacterial spot (Pepper, bell)": {
+        "pesticide": "Copper oxychloride 50WP @ 3g/L (TNAU)",
+        "organic": "Copper Bordeaux mixture 1%",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Bacterial spot (Tomato)": {
+        "pesticide": "Copper oxychloride 50WP @ 2.5g/L (ICAR seedling dip formula)",
+        "organic": "Pseudomonas fluorescens + Trichoderma harzianum @ 5g/L seedling dip (ICAR-NCIPM 2023)",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "BacterialBlights (Sugarcane)": {
+        "pesticide": "Copper oxychloride 50WP @ 3g/L (TNAU Expert System)",
+        "organic": "Hot water sett treatment 50\u00b0C 2 hrs",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Black Rot (Cauliflower)": {
+        "pesticide": "Copper oxychloride 50WP @ 3g/L (TNAU)",
+        "organic": "Hot water seed treatment 50\u00b0C 20 min",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Black Spot (Jackfruit)": {
+        "pesticide": "Carbendazim 50WP @ 1g/L",
+        "organic": "Neem oil 5ml/L spray",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Black rot (Apple)": {
+        "pesticide": "Captan 50WP @ 2.5kg/ha [TNAU Fungicide PDF]",
+        "organic": "Bordeaux mixture 1% spray",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Black rot (Grape)": {
+        "pesticide": "Mancozeb 75WP @ 2.5g/L (TNAU Fungicide PDF)",
+        "organic": "Bordeaux mixture 1%",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "BrownSpot (Rice)": {
+        "pesticide": "Mancozeb 75WP @ 2.5g/L \u2014 EC50 value highly effective (Nature Sci Reports 2020)",
+        "organic": "Silicon-based fertilizer application (ICAR TNAU)",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Cedar apple rust (Apple)": {
+        "pesticide": "Myclobutanil 10WP @ 1g/L (TNAU)",
+        "organic": "Remove nearby juniper/cedar trees (primary host)",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Cercospora leaf spot Gray leaf spot (Corn (maize))": {
+        "pesticide": "Propiconazole 25EC @ 1ml/L (TNAU Fungicide PDF)",
+        "organic": "Trichoderma viride soil application",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Common rust (Corn (maize))": {
+        "pesticide": "Mancozeb 75WP @ 2.5g/L (TNAU)",
+        "organic": "Neem oil 5ml/L spray",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Cutting Weevil (Mango)": {
+        "pesticide": "Chlorpyrifos 20EC @ 2ml/L (TNAU crop list)",
+        "organic": "Neem oil 5ml/L spray",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Die Back (Mango)": {
+        "pesticide": "Copper oxychloride 50WP @ 3g/L (TNAU)",
+        "organic": "Bordeaux paste on pruning cuts",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Downy Mildew (Pumpkin)": {
+        "pesticide": "Metalaxyl + Mancozeb 72WP @ 2.5g/L (Ridomil Gold)",
+        "organic": "Neem oil 5ml/L spray",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Early blight (Potato)": {
+        "pesticide": "Mancozeb 75WP @ 1.25g/L (TNAU Fungicide PDF: 1250g/ha 1000L water)",
+        "organic": "Neem oil 5ml/L spray",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Early blight (Tomato)": {
+        "pesticide": "Mancozeb 75WP @ 2.5g/L (TNAU/ICAR-NCIPM)",
+        "organic": "Pseudomonas fluorescens + Trichoderma harzianum seed treatment @ 15-20g/kg (ICAR-NCIPM 2023)",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Esca (Black Measles) (Grape)": {
+        "pesticide": "Tebuconazole 25EC @ 1ml/L (TNAU)",
+        "organic": "Trichoderma soil drench (ICAR)",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Gall Midge (Mango)": {
+        "pesticide": "Dimethoate 30EC @ 2ml/L (TNAU crop list)",
+        "organic": "Neem oil 5ml/L spray",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Haunglongbing (Citrus greening) (Orange)": {
+        "pesticide": "Imidacloprid 17.8SL @ 0.5ml/L for psyllid control (TNAU)",
+        "organic": "Neem oil 5ml/L to control psyllid vector",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Healthy (Cauliflower)": {
+        "pesticide": "Not Needed (Healthy Plant)",
+        "organic": "Not Needed (Maintain regular watering)",
+        "nutrient": "Standard N-P-K (e.g. 10-10-10)",
+        "fertilizer": "Regular Organic Compost",
+        "dosage": "Routine application"
+    },
+    "Healthy (Cotton)": {
+        "pesticide": "Not Needed (Healthy Plant)",
+        "organic": "Not Needed (Maintain regular watering)",
+        "nutrient": "Standard N-P-K (e.g. 10-10-10)",
+        "fertilizer": "Regular Organic Compost",
+        "dosage": "Routine application"
+    },
+    "Healthy (Jackfruit)": {
+        "pesticide": "Not Needed (Healthy Plant)",
+        "organic": "Not Needed (Maintain regular watering)",
+        "nutrient": "Standard N-P-K (e.g. 10-10-10)",
+        "fertilizer": "Regular Organic Compost",
+        "dosage": "Routine application"
+    },
+    "Healthy (Mango)": {
+        "pesticide": "Not Needed (Healthy Plant)",
+        "organic": "Not Needed (Maintain regular watering)",
+        "nutrient": "Standard N-P-K (e.g. 10-10-10)",
+        "fertilizer": "Regular Organic Compost",
+        "dosage": "Routine application"
+    },
+    "Healthy (Rice)": {
+        "pesticide": "Not Needed (Healthy Plant)",
+        "organic": "Not Needed (Maintain regular watering)",
+        "nutrient": "Standard N-P-K (e.g. 10-10-10)",
+        "fertilizer": "Regular Organic Compost",
+        "dosage": "Routine application"
+    },
+    "Healthy (Sugarcane)": {
+        "pesticide": "Not Needed (Healthy Plant)",
+        "organic": "Not Needed (Maintain regular watering)",
+        "nutrient": "Standard N-P-K (e.g. 10-10-10)",
+        "fertilizer": "Regular Organic Compost",
+        "dosage": "Routine application"
+    },
+    "Healthy Leaf (Pumpkin)": {
+        "pesticide": "Not Needed (Healthy Plant)",
+        "organic": "Not Needed (Maintain regular watering)",
+        "nutrient": "Standard N-P-K (e.g. 10-10-10)",
+        "fertilizer": "Regular Organic Compost",
+        "dosage": "Routine application"
+    },
+    "Hispa (Rice)": {
+        "pesticide": "Chlorpyrifos 20EC @ 2ml/L (TNAU crop list)",
+        "organic": "Neem oil 5ml/L spray (TNAU Organic Farm)",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Late blight (Potato)": {
+        "pesticide": "Metalaxyl + Mancozeb 72WP @ 2.5g/L (Ridomil Gold - TNAU)",
+        "organic": "Copper Bordeaux mixture 1%",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Late blight (Tomato)": {
+        "pesticide": "Metalaxyl + Mancozeb 72WP @ 2.5g/L (TNAU Fungicide PDF)",
+        "organic": "Copper Bordeaux mixture 1%",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Leaf Mold (Tomato)": {
+        "pesticide": "Chlorothalonil 75WP @ 2g/L (TNAU)",
+        "organic": "Neem oil 5ml/L spray",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Leaf blight (Isariopsis Leaf Spot) (Grape)": {
+        "pesticide": "Mancozeb 75WP @ 2.5g/L",
+        "organic": "Bordeaux mixture 1%",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Leaf scorch (Strawberry)": {
+        "pesticide": "Captan 50WP @ 2.5g/L (TNAU Cherry Brown rot same fungicide)",
+        "organic": "Neem oil 5ml/L spray",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "LeafBlast (Rice)": {
+        "pesticide": "Isoprothiolane 40EC @ 750ml/ha (TNAU Fungicide PDF)",
+        "organic": "Silicon fertilizer application (ICAR)",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Mosaic (Sugarcane)": {
+        "pesticide": "Imidacloprid 17.8SL @ 0.5ml/L for aphid vector (TNAU)",
+        "organic": "Use virus-free certified setts",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Mosaic Disease (Pumpkin)": {
+        "pesticide": "Imidacloprid 17.8SL @ 0.5ml/L for whitefly (TNAU)",
+        "organic": "Use virus-free certified seeds",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Northern Leaf Blight (Corn (maize))": {
+        "pesticide": "Propiconazole 25EC @ 1ml/L",
+        "organic": "Neem oil 5ml/L spray",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Powdery Mildew (Cotton)": {
+        "pesticide": "Triadimefon 25WP @ 1g/L (TNAU Fungicide PDF)",
+        "organic": "Neem oil 5ml/L spray",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Powdery Mildew (Mango)": {
+        "pesticide": "Triadimefon 25WP @ 1g/L (TNAU Fungicide PDF)",
+        "organic": "Wettable sulfur 80WP @ 3g/L [Saaf/TNAU]",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Powdery Mildew (Pumpkin)": {
+        "pesticide": "Triadimefon 25WP @ 1g/L (TNAU Fungicide PDF)",
+        "organic": "Neem oil 5ml/L spray",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Powdery mildew (Cherry (including sour))": {
+        "pesticide": "Triadimefon 25WP @ 1g/L (TNAU Fungicide PDF)",
+        "organic": "Neem oil 5ml/L spray",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "RedRot (Sugarcane)": {
+        "pesticide": "Azoxystrobin + Propiconazole combo sett treatment \u2014 best (LSU APS Journals 2022)",
+        "organic": "Hot water sett treatment 50\u00b0C for 2-3 hrs (ICAR/Springer)",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Rust (Sugarcane)": {
+        "pesticide": "Propiconazole 25EC @ 1ml/L (TNAU Fungicide PDF)",
+        "organic": "Neem oil 5ml/L spray",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Septoria leaf spot (Tomato)": {
+        "pesticide": "Mancozeb 75WP @ 2.5g/L (ICAR-NCIPM; TNAU)",
+        "organic": "Pseudomonas fluorescens + Trichoderma harzianum seedling dip (ICAR-NCIPM 2023)",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Sooty Mould (Mango)": {
+        "pesticide": "Imidacloprid 17.8SL @ 0.5ml/L for scale/mealybug source insects",
+        "organic": "Neem oil 5ml/L spray to kill scale/aphid source insects",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Spider mites Two-spotted spider mite (Tomato)": {
+        "pesticide": "Dicofol 18.5EC @ 1.5ml/L (ICAR-IIHR: for red spider mite on tomato)",
+        "organic": "Neem oil 5ml/L \u2014 ICAR-IIHR: spray lower leaf surface",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Target Spot (Tomato)": {
+        "pesticide": "Mancozeb 75WP @ 2.5g/L (TNAU/ICAR)",
+        "organic": "Pseudomonas fluorescens 5ml/L spray (ICAR)",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Target spot (Cotton)": {
+        "pesticide": "Mancozeb 75WP @ 2.5g/L",
+        "organic": "Neem oil 5ml/L spray",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Tomato Yellow Leaf Curl Virus (Tomato)": {
+        "pesticide": "Imidacloprid 200SL @ 0.3ml/L seedling spray (ICAR-IIHR IPM)",
+        "organic": "Yellow sticky traps @ 10/ha (ICAR-NCIPM 2023)",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Tomato mosaic virus (Tomato)": {
+        "pesticide": "Imidacloprid 17.8SL @ 0.3ml/L for aphid vector (ICAR-IIHR IPM)",
+        "organic": "Remove infected plants immediately",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "Unknown Disease": {
+        "pesticide": "Not Needed (Healthy Plant)",
+        "organic": "Not Needed (Maintain regular watering)",
+        "nutrient": "Standard N-P-K (e.g. 10-10-10)",
+        "fertilizer": "Regular Organic Compost",
+        "dosage": "Routine application"
+    },
+    "Yellow (Sugarcane)": {
+        "pesticide": "Imidacloprid 17.8SL @ 0.5ml/L for aphid leafhopper vector (TNAU)",
+        "organic": "Use virus-free healthy setts from certified source",
+        "nutrient": "N-P-K (General)",
+        "fertilizer": "Balanced Compost",
+        "dosage": "Consult local guide"
+    },
+    "healthy (Apple)": {
+        "pesticide": "Not Needed (Healthy Plant)",
+        "organic": "Not Needed (Maintain regular watering)",
+        "nutrient": "Standard N-P-K (e.g. 10-10-10)",
+        "fertilizer": "Regular Organic Compost",
+        "dosage": "Routine application"
+    },
+    "healthy (Blueberry)": {
+        "pesticide": "Not Needed (Healthy Plant)",
+        "organic": "Not Needed (Maintain regular watering)",
+        "nutrient": "Standard N-P-K (e.g. 10-10-10)",
+        "fertilizer": "Regular Organic Compost",
+        "dosage": "Routine application"
+    },
+    "healthy (Cherry (including sour))": {
+        "pesticide": "Not Needed (Healthy Plant)",
+        "organic": "Not Needed (Maintain regular watering)",
+        "nutrient": "Standard N-P-K (e.g. 10-10-10)",
+        "fertilizer": "Regular Organic Compost",
+        "dosage": "Routine application"
+    },
+    "healthy (Corn (maize))": {
+        "pesticide": "Not Needed (Healthy Plant)",
+        "organic": "Not Needed (Maintain regular watering)",
+        "nutrient": "Standard N-P-K (e.g. 10-10-10)",
+        "fertilizer": "Regular Organic Compost",
+        "dosage": "Routine application"
+    },
+    "healthy (Grape)": {
+        "pesticide": "Not Needed (Healthy Plant)",
+        "organic": "Not Needed (Maintain regular watering)",
+        "nutrient": "Standard N-P-K (e.g. 10-10-10)",
+        "fertilizer": "Regular Organic Compost",
+        "dosage": "Routine application"
+    },
+    "healthy (Peach)": {
+        "pesticide": "Not Needed (Healthy Plant)",
+        "organic": "Not Needed (Maintain regular watering)",
+        "nutrient": "Standard N-P-K (e.g. 10-10-10)",
+        "fertilizer": "Regular Organic Compost",
+        "dosage": "Routine application"
+    },
+    "healthy (Pepper, bell)": {
+        "pesticide": "Not Needed (Healthy Plant)",
+        "organic": "Not Needed (Maintain regular watering)",
+        "nutrient": "Standard N-P-K (e.g. 10-10-10)",
+        "fertilizer": "Regular Organic Compost",
+        "dosage": "Routine application"
+    },
+    "healthy (Potato)": {
+        "pesticide": "Not Needed (Healthy Plant)",
+        "organic": "Not Needed (Maintain regular watering)",
+        "nutrient": "Standard N-P-K (e.g. 10-10-10)",
+        "fertilizer": "Regular Organic Compost",
+        "dosage": "Routine application"
+    },
+    "healthy (Raspberry)": {
+        "pesticide": "Not Needed (Healthy Plant)",
+        "organic": "Not Needed (Maintain regular watering)",
+        "nutrient": "Standard N-P-K (e.g. 10-10-10)",
+        "fertilizer": "Regular Organic Compost",
+        "dosage": "Routine application"
+    },
+    "healthy (Soybean)": {
+        "pesticide": "Not Needed (Healthy Plant)",
+        "organic": "Not Needed (Maintain regular watering)",
+        "nutrient": "Standard N-P-K (e.g. 10-10-10)",
+        "fertilizer": "Regular Organic Compost",
+        "dosage": "Routine application"
+    },
+    "healthy (Strawberry)": {
+        "pesticide": "Not Needed (Healthy Plant)",
+        "organic": "Not Needed (Maintain regular watering)",
+        "nutrient": "Standard N-P-K (e.g. 10-10-10)",
+        "fertilizer": "Regular Organic Compost",
+        "dosage": "Routine application"
+    },
+    "healthy (Tomato)": {
+        "pesticide": "Not Needed (Healthy Plant)",
+        "organic": "Not Needed (Maintain regular watering)",
+        "nutrient": "Standard N-P-K (e.g. 10-10-10)",
+        "fertilizer": "Regular Organic Compost",
+        "dosage": "Routine application"
+    }
+}

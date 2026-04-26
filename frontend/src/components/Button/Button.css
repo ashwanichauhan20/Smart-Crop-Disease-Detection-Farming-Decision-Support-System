@@ -1,0 +1,104 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: none;
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+}
+
+/* Sizes */
+.btn-sm {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.82rem;
+}
+
+.btn-md {
+    padding: 0.75rem 1.75rem;
+    font-size: 0.95rem;
+}
+
+.btn-lg {
+    padding: 1rem 2.25rem;
+    font-size: 1.05rem;
+}
+
+/* Variants */
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    color: white;
+    box-shadow: 0 4px 15px rgba(46, 125, 50, 0.3);
+}
+
+.btn-primary:hover:not(.btn-disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(46, 125, 50, 0.45);
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, var(--secondary), var(--secondary-light));
+    color: white;
+    box-shadow: 0 4px 15px rgba(255, 160, 0, 0.3);
+}
+
+.btn-secondary:hover:not(.btn-disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(255, 160, 0, 0.45);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.btn-outline:hover:not(.btn-disabled) {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-ghost {
+    background: rgba(46, 125, 50, 0.1);
+    color: var(--primary);
+}
+
+.btn-ghost:hover:not(.btn-disabled) {
+    background: rgba(46, 125, 50, 0.2);
+    transform: translateY(-2px);
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #e53935, #ef5350);
+    color: white;
+    box-shadow: 0 4px 15px rgba(229, 57, 53, 0.3);
+}
+
+.btn-danger:hover:not(.btn-disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(229, 57, 53, 0.45);
+}
+
+/* Full width */
+.btn-full {
+    width: 100%;
+}
+
+/* Disabled */
+.btn-disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+/* Icon */
+.btn-icon {
+    font-size: 1.1em;
+    line-height: 1;
+    display: inline-flex;
+}

@@ -1,0 +1,2 @@
+Total_images: 19950
+Total_classes: 71
