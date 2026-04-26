@@ -1,5 +1,11 @@
 const ruleEngine = require('../services/ruleEngine');
 
+// Simple in-memory cache for weather data to prevent 429 Rate Limiting
+const weatherCache = new Map();
+const CACHE_TTL = 10 * 60 * 1000; // 10 minutes
+
+const getCacheKey = (lat, lng, crop, stage) => `${parseFloat(lat).toFixed(3)}_${parseFloat(lng).toFixed(3)}_${crop}_${stage}`;
+
 // Helper to map WMO weather codes to conditions
 const mapWmoCode = (code) => {
     if (code === 0) return { condition: 'Clear', desc: 'Clear sky' };
@@ -13,12 +19,21 @@ const mapWmoCode = (code) => {
     return { condition: 'Unknown', desc: 'Unknown' };
 };
 
-// Retry-enabled fetch helper (up to 2 retries)
-async function fetchWithRetry(url, options = {}, retries = 2) {
+// Retry-enabled fetch helper with exponential backoff for 429s
+async function fetchWithRetry(url, options = {}, retries = 3) {
     for (let attempt = 0; attempt <= retries; attempt++) {
         try {
             const response = await fetch(url, options);
             if (response.ok) return response;
+            
+            // Handle Rate Limiting (429) specifically
+            if (response.status === 429) {
+                const waitTime = (attempt + 1) * 3000;
+                console.warn(`⚠️ Rate limited (429). Waiting ${waitTime}ms before retry...`);
+                await new Promise(r => setTimeout(r, waitTime));
+                continue;
+            }
+
             if (attempt === retries) return response;
             console.warn(`⚠️ Fetch attempt ${attempt + 1} failed (status ${response.status}), retrying...`);
             await new Promise(r => setTimeout(r, 1000 * (attempt + 1)));
@@ -41,13 +56,25 @@ const defaultAdvisory = (crop, stage) => ({
 });
 
 exports.getWeatherDashboard = async (req, res) => {
-    console.log(`🌤️ Weather Dashboard Request: lat=${req.query.lat}, lng=${req.query.lng}, crop=${req.query.crop}`);
+    let { lat, lng, crop = 'general', stage = 'growing' } = req.query;
+    
+    // Fix for frontend passing "undefined" as string
+    if (crop === 'undefined' || !crop) crop = 'general';
+    if (stage === 'undefined' || !stage) stage = 'growing';
+
+    console.log(`🌤️ Weather Dashboard Request: lat=${lat}, lng=${lng}, crop=${crop}`);
     
     try {
-        const { lat, lng, crop = 'general', stage = 'growing' } = req.query;
-
         if (!lat || !lng) {
             return res.status(400).json({ success: false, message: 'Latitude (lat) and Longitude (lng) are required.' });
+        }
+
+        // 0. Check Cache
+        const cacheKey = getCacheKey(lat, lng, crop, stage);
+        const cachedData = weatherCache.get(cacheKey);
+        if (cachedData && (Date.now() - cachedData.timestamp < CACHE_TTL)) {
+            console.log('💎 Serving weather from cache');
+            return res.json({ success: true, data: cachedData.data });
         }
 
         // 1. Fetch Current & Forecast Weather from Open-Meteo (with auto-retry)
@@ -150,7 +177,6 @@ exports.getWeatherDashboard = async (req, res) => {
             if (Array.isArray(plan)) farmingPlan = plan;
         } catch (ruleErr) {
             console.error('❌ Rule Engine Error:', ruleErr.message);
-            // Defaults already set — continue normally
         }
 
         // 5. Calculate Risk Level
@@ -158,26 +184,34 @@ exports.getWeatherDashboard = async (req, res) => {
         if (smartAlerts.some(a => a.type === 'High')) overallRiskLevel = 'High';
         else if (smartAlerts.some(a => a.type === 'Medium')) overallRiskLevel = 'Medium';
 
+        const result = {
+            location: { lat: parseFloat(lat), lng: parseFloat(lng), city: cityName },
+            current_weather: currentWeather,
+            risk_level: overallRiskLevel,
+            alerts: smartAlerts,
+            advisory: cropAdvisory,
+            forecast: forecast7Days,
+            hourly_forecast: hourlyForecast,
+            farming_plan: farmingPlan
+        };
+
+        // Save to cache
+        weatherCache.set(cacheKey, { timestamp: Date.now(), data: result });
+        
+        // Periodic cache cleanup (keep map size small)
+        if (weatherCache.size > 100) {
+            const firstKey = weatherCache.keys().next().value;
+            weatherCache.delete(firstKey);
+        }
+
         console.log('✅ Weather Dashboard response ready.');
-        return res.json({
-            success: true,
-            data: {
-                location: { lat: parseFloat(lat), lng: parseFloat(lng), city: cityName },
-                current_weather: currentWeather,
-                risk_level: overallRiskLevel,
-                alerts: smartAlerts,
-                advisory: cropAdvisory,
-                forecast: forecast7Days,
-                hourly_forecast: hourlyForecast,
-                farming_plan: farmingPlan
-            }
-        });
+        return res.json({ success: true, data: result });
 
     } catch (error) {
         console.error('❌ CRITICAL Weather Dashboard Error:', error.stack);
         res.status(500).json({ 
             success: false, 
-            message: 'Unable to load weather data. Please check your connection and try again.' 
+            message: 'Unable to load weather data. Please try again in a moment.' 
         });
     }
 };
