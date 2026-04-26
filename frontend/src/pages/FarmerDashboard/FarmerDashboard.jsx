@@ -48,7 +48,7 @@ function FarmerDashboard() {
     // Read logged-in user from localStorage
     const currentUser = JSON.parse(localStorage.getItem('fasalCurrentUser') || 'null')
     
-    const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:5001'
+    const API_BASE = (import.meta.env.VITE_API_BASE || (import.meta.env.MODE === 'production' ? '' : 'http://localhost:5001'))
 
     useEffect(() => {
         if (!currentUser) {

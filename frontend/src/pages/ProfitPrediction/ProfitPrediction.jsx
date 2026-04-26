@@ -102,7 +102,7 @@ function ProfitPrediction({ isTab = false }) {
             const currentUser = JSON.parse(localStorage.getItem('fasalCurrentUser') || 'null');
             if (currentUser?._id && filteredData.length > 0) {
                 try {
-                    const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:5001';
+                    const API_BASE = (import.meta.env.VITE_API_BASE || (import.meta.env.MODE === 'production' ? '' : 'http://localhost:5001'));
                     fetch(`${API_BASE}/api/user/${currentUser._id}`, {
                         method: 'PUT',
                         headers: { 'Content-Type': 'application/json' },

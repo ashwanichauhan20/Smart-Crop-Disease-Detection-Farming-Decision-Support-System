@@ -12,7 +12,7 @@ function BookingModal({ onClose, diseaseName = 'General Consultation', initialEx
     const [realExperts, setRealExperts] = useState([])
 
     const currentUser = JSON.parse(localStorage.getItem('fasalCurrentUser') || 'null')
-    const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:5001'
+    const API_BASE = (import.meta.env.VITE_API_BASE || (import.meta.env.MODE === 'production' ? '' : 'http://localhost:5001'))
 
     useEffect(() => {
         const fetchExperts = async () => {

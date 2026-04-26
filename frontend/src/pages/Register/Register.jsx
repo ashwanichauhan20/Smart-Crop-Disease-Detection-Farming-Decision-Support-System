@@ -194,7 +194,7 @@ function Register() {
     const onSubmit = async (data) => {
         setSubmitError('')
         try {
-            const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:5001'
+            const API_BASE = (import.meta.env.VITE_API_BASE || (import.meta.env.MODE === 'production' ? '' : 'http://localhost:5001'))
             const res = await fetch(`${API_BASE}/api/auth/register`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },

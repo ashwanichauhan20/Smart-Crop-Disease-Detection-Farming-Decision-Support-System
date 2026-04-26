@@ -39,7 +39,7 @@ function Navbar() {
         const stored = localStorage.getItem('fasalCurrentUser')
         if (stored) {
             const user = JSON.parse(stored)
-            const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:5001'
+            const API_BASE = (import.meta.env.VITE_API_BASE || (import.meta.env.MODE === 'production' ? '' : 'http://localhost:5001'))
             
             // Re-fetch minimal user info to ensure persistence across refreshes
             fetch(`${API_BASE}/api/user/${user._id || user.id}`)

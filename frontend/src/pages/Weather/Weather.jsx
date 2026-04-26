@@ -5,7 +5,7 @@ import Navbar from '../../components/Navbar/Navbar'
 import '../DiseaseDetection/DiseaseDetection.css'
 import './Weather.css'
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:5001'
+const API_BASE = (import.meta.env.VITE_API_BASE || (import.meta.env.MODE === 'production' ? '' : 'http://localhost:5001'))
 
 // 10 preset crop options for the 7-day farmer plan
 const CROP_OPTIONS = [

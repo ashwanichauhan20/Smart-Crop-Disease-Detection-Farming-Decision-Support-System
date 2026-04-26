@@ -90,7 +90,7 @@ function FarmerProfile() {
         if (!currentUser?.id && !currentUser?._id) return
         try {
             const userId = currentUser.id || currentUser._id
-            const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:5001'
+            const API_BASE = (import.meta.env.VITE_API_BASE || (import.meta.env.MODE === 'production' ? '' : 'http://localhost:5001'))
             const res = await fetch(`${API_BASE}/api/user/${userId}`)
             const json = await res.json()
             if (json.success) {
@@ -141,7 +141,7 @@ function FarmerProfile() {
             const userId = currentUser?.id || currentUser?._id
             if (userId) {
                 try {
-                    const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:5001'
+                    const API_BASE = (import.meta.env.VITE_API_BASE || (import.meta.env.MODE === 'production' ? '' : 'http://localhost:5001'))
                     const saveRes = await fetch(`${API_BASE}/api/user/${userId}`, {
                         method: 'PUT',
                         headers: { 'Content-Type': 'application/json' },
@@ -181,7 +181,7 @@ function FarmerProfile() {
         try {
             setUploading(true)
             const userId = currentUser.id || currentUser._id
-            const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:5001'
+            const API_BASE = (import.meta.env.VITE_API_BASE || (import.meta.env.MODE === 'production' ? '' : 'http://localhost:5001'))
             const res = await fetch(`${API_BASE}/api/user/${userId}`, {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },

@@ -7,7 +7,7 @@ import './LoginModal.css'
 function generateOTP() { return String(Math.floor(100000 + Math.random() * 900000)) }
 
 function LoginModal({ onClose, onSuccess }) {
-    const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:5001'
+    const API_BASE = (import.meta.env.VITE_API_BASE || (import.meta.env.MODE === 'production' ? '' : 'http://localhost:5001'))
     const navigate = useNavigate()
     const { addNotification } = useNotifications()
     const overlayRef = useRef(null)

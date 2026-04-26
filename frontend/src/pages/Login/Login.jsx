@@ -57,7 +57,7 @@ function Login() {
         e.preventDefault(); setError('')
 
         try {
-            const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:5001'
+            const API_BASE = (import.meta.env.VITE_API_BASE || (import.meta.env.MODE === 'production' ? '' : 'http://localhost:5001'))
             const res = await fetch(`${API_BASE}/api/auth/login`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -143,7 +143,7 @@ function Login() {
         if (newPass !== confirmPass) { setError('Passwords do not match.'); return }
         
         try {
-            const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:5001'
+            const API_BASE = (import.meta.env.VITE_API_BASE || (import.meta.env.MODE === 'production' ? '' : 'http://localhost:5001'))
             const res = await fetch(`${API_BASE}/api/auth/forgot-password`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },

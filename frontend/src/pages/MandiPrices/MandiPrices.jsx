@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react'
 import './MandiPrices.css'
 
-const API_BASE = import.meta.env.VITE_MANDI_API || 'http://localhost:5001/api/mandis'
+const API_BASE = import.meta.env.VITE_MANDI_API || (import.meta.env.MODE === 'production' ? '/api/mandis' : 'http://localhost:5001/api/mandis')
 
 // ─── Predefined city coordinates for manual input fallback ───────────────────
 const CITY_COORDS = {

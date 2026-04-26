@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { useNotifications } from '../../context/NotificationContext'
 import './AdminDashboard.css'
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:5001'
+const API_BASE = (import.meta.env.VITE_API_BASE || (import.meta.env.MODE === 'production' ? '' : 'http://localhost:5001'))
 
 /* Removed LocalStorage User Mocking */
 

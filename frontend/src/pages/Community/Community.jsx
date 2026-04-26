@@ -61,7 +61,7 @@ const dummyPosts = [
     },
 ]
 
-const API_BASE = typeof import.meta !== 'undefined' ? (import.meta.env.VITE_API_BASE || 'http://localhost:5001') : 'http://localhost:5001';
+const API_BASE = typeof import.meta !== 'undefined' ? ((import.meta.env.VITE_API_BASE || (import.meta.env.MODE === 'production' ? '' : (import.meta.env.MODE === 'production' ? '' : 'http://localhost:5001')))) : 'http://localhost:5001';
 
 // Utility to read/write posts from LS (fallback)
 const getPostsFromLS = () => {

@@ -5,7 +5,7 @@ import Footer from '../../components/Footer/Footer'
 import Navbar from '../../components/Navbar/Navbar'
 import './Home.css'
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:5001'
+import { API_BASE } from '../../config'
 
 const features = [
     {

@@ -23,7 +23,7 @@ function VideoConsultation({ isTab = false }) {
     const currentUser = JSON.parse(localStorage.getItem('fasalCurrentUser') || 'null')
 
     const [experts, setExperts] = useState([])
-    const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:5001'
+    const API_BASE = (import.meta.env.VITE_API_BASE || (import.meta.env.MODE === 'production' ? '' : 'http://localhost:5001'))
 
     const localVideoRef = useRef(null)
     const remoteVideoRef = useRef(null)

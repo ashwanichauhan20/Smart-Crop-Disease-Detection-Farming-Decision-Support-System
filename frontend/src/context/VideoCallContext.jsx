@@ -26,7 +26,7 @@ export function VideoCallProvider({ children }) {
     useEffect(() => {
         if (!currentUser || !currentUser._id) return
 
-        const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:5001'
+        const API_BASE = (import.meta.env.VITE_API_BASE || (import.meta.env.MODE === 'production' ? '' : 'http://localhost:5001'))
         const isLocalhost = API_BASE.includes('localhost')
         
         // We configure Peer to use our custom backend signaling server
