@@ -32,6 +32,7 @@ const recentActivity = [
 function FarmerDashboard() {
     const navigate = useNavigate()
     const [activeTab, setActiveTab] = useState('overview')
+    const [sidebarOpen, setSidebarOpen] = useState(false)
 
     const [userProfile, setUserProfile] = useState(null)
     const [stats, setStats] = useState({ detections: 0, savings: 0, calls: 0, cropsTracked: 0 })
@@ -187,7 +188,7 @@ function FarmerDashboard() {
     const joinYear = displayUser?.joinedDate ? new Date(displayUser.joinedDate).getFullYear() : 'Recently'
 
     return (
-        <div className="farmer-dash">
+        <div className={`farmer-dash ${sidebarOpen ? 'sidebar-open' : ''}`}>
             {showWelcome && (
                 <div className="welcome-toast animate-slideInRight" style={{ position: 'fixed', top: '20px', right: '20px', background: 'linear-gradient(135deg, #10b981, #059669)', color: 'white', padding: '16px 24px', borderRadius: '12px', boxShadow: '0 10px 25px rgba(0,0,0,0.2)', zIndex: 9999, display: 'flex', alignItems: 'center', gap: '12px' }}>
                     <span style={{ fontSize: '1.5rem' }}>🎉</span>
@@ -199,7 +200,8 @@ function FarmerDashboard() {
             )}
 
             {/* Sidebar */}
-            <aside className="farmer-sidebar">
+            <aside className={`farmer-sidebar ${sidebarOpen ? 'mobile-show' : ''}`}>
+                <button className="sidebar-close-btn" onClick={() => setSidebarOpen(false)}>×</button>
                 <div className="farmer-sidebar-header">
                     <div className="farmer-avatar-small">
                         {displayUser?.profilePic ? (
@@ -217,7 +219,10 @@ function FarmerDashboard() {
                         <button
                             key={tab.id}
                             className={`farmer-sidebar-link ${activeTab === tab.id ? 'active' : ''}`}
-                            onClick={() => setActiveTab(tab.id)}
+                            onClick={() => {
+                                setActiveTab(tab.id);
+                                setSidebarOpen(false);
+                            }}
                         >
                             <span>{tab.icon}</span> {tab.title}
                         </button>
@@ -237,9 +242,12 @@ function FarmerDashboard() {
             {/* Main Content Area */}
             <main className="farmer-main">
                 <header className="farmer-main-header">
-                    <h2>
-                        {dashTabs.find(t => t.id === activeTab)?.icon} {dashTabs.find(t => t.id === activeTab)?.title}
-                    </h2>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                        <button className="sidebar-toggle-btn" onClick={() => setSidebarOpen(true)}>☰</button>
+                        <h2>
+                            {dashTabs.find(t => t.id === activeTab)?.icon} {dashTabs.find(t => t.id === activeTab)?.title}
+                        </h2>
+                    </div>
                     <div className="farmer-header-actions">
                         <div className="weather-mini" style={{ background: '#f8fafc', padding: '0.4rem 0.8rem', borderRadius: '8px', border: '1px solid #e2e8f0', color: '#333' }}>
                             <span style={{ fontSize: '1.2rem' }}>{weatherData?.condition === 'Rain' ? '🌧️' : weatherData?.condition === 'Cloudy' ? '☁️' : '🌤️'}</span>

@@ -8,6 +8,7 @@ import './ExpertDashboard.css'
 
 function ExpertDashboard() {
     const [activeTab, setActiveTab] = useState('overview')
+    const [sidebarOpen, setSidebarOpen] = useState(false)
     const [farmerQueries, setFarmerQueries] = useState([])
     const navigate = useNavigate()
     const { addNotification } = useNotifications()
@@ -543,9 +544,10 @@ function ExpertDashboard() {
     }
 
     return (
-        <div className="expert-dash">
+        <div className={`expert-dash ${sidebarOpen ? 'sidebar-open' : ''}`}>
             {/* Sidebar */}
-            <aside className="expert-sidebar">
+            <aside className={`expert-sidebar ${sidebarOpen ? 'mobile-show' : ''}`}>
+                <button className="sidebar-close-btn" onClick={() => setSidebarOpen(false)}>×</button>
                 <div className="expert-sidebar-header">
                     <div className="expert-avatar-small">
                         {currentUser?.profilePic ? (
@@ -562,36 +564,40 @@ function ExpertDashboard() {
                     <button
                         className={`expert-sidebar-link ${activeTab === 'overview' ? 'active' : ''}`}
                         onClick={() => setActiveTab('overview')}
+                        onClick={() => { setActiveTab('overview'); setSidebarOpen(false); }}
                     >
                         <span>📊</span> Overview
                     </button>
                     <button
                         className={`expert-sidebar-link ${activeTab === 'queries' ? 'active' : ''}`}
-                        onClick={() => setActiveTab('queries')}
+                            onClick={() => {
+                                setActiveTab('queries');
+                                setSidebarOpen(false);
+                            }}
                     >
                         <span>❓</span> Farmer Queries
                     </button>
                     <button
                         className={`expert-sidebar-link ${activeTab === 'community' ? 'active' : ''}`}
-                        onClick={() => setActiveTab('community')}
+                        onClick={() => { setActiveTab('community'); setSidebarOpen(false); }}
                     >
                         <span>🌾</span> Community Moderation
                     </button>
                     <button
                         className={`expert-sidebar-link ${activeTab === 'schedule' ? 'active' : ''}`}
-                        onClick={() => setActiveTab('schedule')}
+                        onClick={() => { setActiveTab('schedule'); setSidebarOpen(false); }}
                     >
                         <span>📅</span> My Schedule
                     </button>
                     <button
                         className={`expert-sidebar-link ${activeTab === 'feedback' ? 'active' : ''}`}
-                        onClick={() => setActiveTab('feedback')}
+                        onClick={() => { setActiveTab('feedback'); setSidebarOpen(false); }}
                     >
                         <span>💬</span> Farmer Feedback
                     </button>
                     <button
                         className={`expert-sidebar-link ${activeTab === 'connect' ? 'active' : ''}`}
-                        onClick={() => setActiveTab('connect')}
+                        onClick={() => { setActiveTab('connect'); setSidebarOpen(false); }}
                     >
                         <span>🤝</span> Connect
                     </button>
@@ -600,7 +606,7 @@ function ExpertDashboard() {
                 <div className="expert-sidebar-footer">
                     <button
                         className={`expert-sidebar-link ${activeTab === 'profile' ? 'active' : ''}`}
-                        onClick={() => { setActiveTab('profile'); setIsEditingProfile(false); }}
+                        onClick={() => { setActiveTab('profile'); setIsEditingProfile(false); setSidebarOpen(false); }}
                         style={{ marginBottom: '1rem', background: activeTab === 'profile' ? 'rgba(255,255,255,0.1)' : 'transparent' }}
                     >
                         <span>👤</span> My Profile
@@ -617,15 +623,18 @@ function ExpertDashboard() {
             {/* Main Content Area */}
             <main className="expert-main">
                 <header className="expert-main-header">
-                    <h2>
-                        {activeTab === 'overview' && '📊 Dashboard Overview'}
-                        {activeTab === 'queries' && '❓ Farmer Queries'}
-                        {activeTab === 'community' && '🌾 Community Moderation'}
-                        {activeTab === 'schedule' && '📅 My Schedule'}
-                        {activeTab === 'feedback' && '💬 Farmer Feedback'}
-                        {activeTab === 'connect' && '🤝 Expert & Admin Connection'}
-                        {activeTab === 'profile' && '👤 My Profile'}
-                    </h2>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                        <button className="sidebar-toggle-btn" onClick={() => setSidebarOpen(true)}>☰</button>
+                        <h2>
+                            {activeTab === 'overview' && '📊 Dashboard Overview'}
+                            {activeTab === 'queries' && '❓ Farmer Queries'}
+                            {activeTab === 'community' && '🌾 Community Moderation'}
+                            {activeTab === 'schedule' && '📅 My Schedule'}
+                            {activeTab === 'feedback' && '💬 Farmer Feedback'}
+                            {activeTab === 'connect' && '🤝 Expert & Admin Connection'}
+                            {activeTab === 'profile' && '👤 My Profile'}
+                        </h2>
+                    </div>
                     <div className="expert-header-actions">
                         <div className="expert-status-toggle">
                             <span className="status-dot" />

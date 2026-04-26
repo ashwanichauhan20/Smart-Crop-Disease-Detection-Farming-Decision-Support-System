@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import ErrorBoundary from './ErrorBoundary.jsx'
 import './index.css'
+import './responsive.css'
 
 // Patch for Google Translate React Crash
 if (typeof Node === 'function' && Node.prototype) {

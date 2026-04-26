@@ -1,0 +1,155 @@
+/* ── GLOBAL RESPONSIVE OVERRIDES ── */
+.sidebar-toggle-btn, .sidebar-close-btn {
+    display: none;
+}
+
+/* General Layout Fixes */
+@media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    /* Fix for 100vh/100vw containers that hide sidebar */
+    .farmer-dash, .expert-dash {
+        flex-direction: column !important;
+        height: auto !important;
+        min-height: 100vh;
+        overflow: visible !important;
+    }
+
+    /* Sidebar toggle buttons */
+    .sidebar-toggle-btn {
+        display: block !important;
+        background: #f1f5f9;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        padding: 5px 12px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        color: #1b4d24;
+    }
+
+    .sidebar-close-btn {
+        display: block !important;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: rgba(255,255,255,0.2);
+        border: none;
+        color: white;
+        font-size: 2rem;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    .farmer-sidebar, .expert-sidebar {
+        display: none !important; /* Hide sidebar by default on mobile */
+    }
+
+    .farmer-sidebar.mobile-show, .expert-sidebar.mobile-show {
+        display: flex !important;
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 280px !important;
+        z-index: 1000;
+        animation: slideInLeft 0.3s ease;
+    }
+
+    @keyframes slideInLeft {
+        from { transform: translateX(-100%); }
+        to { transform: translateX(0); }
+    }
+
+    .farmer-main, .expert-main {
+        width: 100% !important;
+        height: auto !important;
+        overflow: visible !important;
+    }
+
+    .farmer-content, .expert-content {
+        padding: 1rem !important;
+        overflow: visible !important;
+    }
+
+    /* Header adjustments */
+    .farmer-main-header, .expert-main-header {
+        padding: 0 1rem !important;
+        flex-wrap: wrap;
+        height: auto !important;
+        min-height: 60px;
+        gap: 0.5rem;
+    }
+
+    /* Grid adjustments */
+    .dash-stats, .stats-row {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 0.75rem !important;
+    }
+
+    .dash-main-grid, .expert-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
+
+    .dash-cards-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
+
+    /* Form adjustments */
+    .profile-details-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .profile-header-card {
+        flex-direction: column !important;
+        text-align: center;
+        padding: 1.5rem !important;
+    }
+
+    /* Modal adjustments */
+    .modal-content {
+        width: 95% !important;
+        margin: 10px auto !important;
+        padding: 1rem !important;
+    }
+
+    /* Mandi Prices table fix */
+    .mandi-table-container {
+        overflow-x: auto;
+    }
+
+    .mandi-table {
+        min-width: 600px;
+    }
+
+    /* Google Translate Widget positioning */
+    #google_translate_element {
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .dash-stats, .stats-row {
+        grid-template-columns: 1fr !important;
+    }
+
+    .logo-text {
+        display: none; /* Hide subtext on very small screens */
+    }
+
+    .welcome-name {
+        font-size: 1.2rem !important;
+    }
+
+    .nav-avatar-name {
+        display: none;
+    }
+}
