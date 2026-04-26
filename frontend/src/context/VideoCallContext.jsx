@@ -106,7 +106,11 @@ export function VideoCallProvider({ children }) {
             activeCall.close()
         }
         if (localStream) {
-            localStream.getTracks().forEach(track => track.stop())
+            console.log("🛑 Stopping local stream tracks...");
+            localStream.getTracks().forEach(track => {
+                track.stop();
+                console.log(`Track stopped: ${track.kind}`);
+            });
         }
         setLocalStream(null)
         setRemoteStream(null)

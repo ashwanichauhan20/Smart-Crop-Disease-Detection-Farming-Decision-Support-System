@@ -545,6 +545,7 @@ function ExpertDashboard() {
 
     return (
         <div className={`expert-dash ${sidebarOpen ? 'sidebar-open' : ''}`}>
+            <div className="sidebar-backdrop" onClick={() => setSidebarOpen(false)}></div>
             {/* Sidebar */}
             <aside className={`expert-sidebar ${sidebarOpen ? 'mobile-show' : ''}`}>
                 <button className="sidebar-close-btn" onClick={() => setSidebarOpen(false)}>×</button>

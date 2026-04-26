@@ -189,6 +189,7 @@ function FarmerDashboard() {
 
     return (
         <div className={`farmer-dash ${sidebarOpen ? 'sidebar-open' : ''}`}>
+            <div className="sidebar-backdrop" onClick={() => setSidebarOpen(false)}></div>
             {showWelcome && (
                 <div className="welcome-toast animate-slideInRight" style={{ position: 'fixed', top: '20px', right: '20px', background: 'linear-gradient(135deg, #10b981, #059669)', color: 'white', padding: '16px 24px', borderRadius: '12px', boxShadow: '0 10px 25px rgba(0,0,0,0.2)', zIndex: 9999, display: 'flex', alignItems: 'center', gap: '12px' }}>
                     <span style={{ fontSize: '1.5rem' }}>🎉</span>

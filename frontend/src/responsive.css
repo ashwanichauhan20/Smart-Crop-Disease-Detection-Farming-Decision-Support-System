@@ -103,14 +103,48 @@
     }
 
     /* Form adjustments */
-    .profile-details-grid {
-        grid-template-columns: 1fr !important;
+    .hero-title {
+        font-size: 2.2rem !important;
+        letter-spacing: -1px !important;
     }
 
-    .profile-header-card {
+    .hero-tagline {
+        font-size: 0.9rem !important;
+        letter-spacing: 1.5px !important;
+    }
+
+    .hero-desc {
+        font-size: 1rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .hero-actions {
         flex-direction: column !important;
+        width: 100% !important;
+    }
+
+    .hero-btn {
+        width: 100% !important;
         text-align: center;
+    }
+
+    .hero-glass-container {
         padding: 1.5rem !important;
+        margin: 0 10px !important;
+    }
+
+    /* Sidebar Backdrop */
+    .sidebar-backdrop {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.5);
+        backdrop-filter: blur(4px);
+        z-index: 999;
+    }
+
+    .sidebar-open .sidebar-backdrop {
+        display: block;
     }
 
     /* Modal adjustments */

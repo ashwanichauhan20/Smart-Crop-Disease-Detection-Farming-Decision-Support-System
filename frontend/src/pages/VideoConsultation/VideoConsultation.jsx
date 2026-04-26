@@ -155,8 +155,19 @@ function VideoConsultation({ isTab = false }) {
     }
 
     const endCall = () => {
+        if (localStream) {
+            localStream.getTracks().forEach(track => {
+                track.stop();
+                console.log(`Stopped track: ${track.kind}`);
+            });
+        }
         contextEndCall()
         setCallState('ended')
+        
+        // If expert, go back to dashboard after 3 seconds
+        if (currentUser?.role === 'expert') {
+            setTimeout(() => setCallState('idle'), 3000)
+        }
     }
 
     const submitFeedback = async () => {
@@ -265,19 +276,27 @@ function VideoConsultation({ isTab = false }) {
                                             <span>✅</span>
                                             <p style={{fontWeight: 'bold', fontSize: '1.2rem'}}>Call Ended Successfully</p>
                                             <p className="call-ended-sub">Duration: {formatTime(callDuration)}</p>
-                                            <div style={{marginTop: '1rem'}}>
-                                                <p style={{marginBottom: '8px', fontWeight: '500'}}>Rate this consultation:</p>
-                                                <div className="star-rating">
-                                                    {[1, 2, 3, 4, 5].map(s => <button key={s} className={`star-btn ${rating >= s ? 'selected' : ''}`} onClick={() => setRating(s)} style={{ color: rating >= s ? '#FFD700' : '#ccc', fontSize: '1.5rem', background: 'none', border: 'none', cursor: 'pointer' }}>⭐</button>)}
+                                            
+                                            {currentUser?.role !== 'expert' ? (
+                                                <div style={{marginTop: '1rem', width: '100%'}}>
+                                                    <p style={{marginBottom: '8px', fontWeight: '500'}}>Rate this consultation:</p>
+                                                    <div className="star-rating">
+                                                        {[1, 2, 3, 4, 5].map(s => <button key={s} className={`star-btn ${rating >= s ? 'selected' : ''}`} onClick={() => setRating(s)} style={{ color: rating >= s ? '#FFD700' : '#ccc', fontSize: '1.5rem', background: 'none', border: 'none', cursor: 'pointer' }}>⭐</button>)}
+                                                    </div>
+                                                    <textarea
+                                                        value={feedbackComment}
+                                                        onChange={e => setFeedbackComment(e.target.value)}
+                                                        placeholder="Tell us what you liked or what could be improved..."
+                                                        style={{ width: '100%', padding: '12px', borderRadius: '12px', border: '1px solid #e2e8f0', marginTop: '1rem', minHeight: '100px', resize: 'vertical', fontSize: '0.9rem', outline: 'none' }}
+                                                    />
+                                                    <button className="submit-feedback-btn" onClick={submitFeedback} style={{ marginTop: '1.5rem', background: 'linear-gradient(135deg, #3b82f6, #2563eb)', color: 'white', padding: '0.8rem 1.5rem', borderRadius: '12px', border: 'none', cursor: 'pointer', fontWeight: 'bold', width: '100%', boxShadow: '0 4px 12px rgba(37, 99, 235, 0.3)' }}>Submit Feedback & Exit</button>
                                                 </div>
-                                                <textarea
-                                                    value={feedbackComment}
-                                                    onChange={e => setFeedbackComment(e.target.value)}
-                                                    placeholder="Tell us what you liked or what could be improved..."
-                                                    style={{ width: '100%', padding: '8px', borderRadius: '8px', border: '1px solid #e2e8f0', marginTop: '1rem', minHeight: '80px', resize: 'vertical', fontSize: '0.9rem' }}
-                                                />
-                                                <button className="submit-feedback-btn" onClick={submitFeedback} style={{ marginTop: '1rem', background: '#3b82f6', color: 'white', padding: '0.6rem 1.5rem', borderRadius: '8px', border: 'none', cursor: 'pointer', fontWeight: 'bold', width: '100%' }}>Submit Feedback</button>
-                                            </div>
+                                            ) : (
+                                                <div style={{marginTop: '1rem', textAlign: 'center'}}>
+                                                    <p style={{color: '#64748b'}}>Returning to expert dashboard in a few seconds...</p>
+                                                    <button className="submit-feedback-btn" onClick={() => setCallState('idle')} style={{ marginTop: '1rem', background: '#3b82f6', color: 'white', padding: '0.6rem 1.5rem', borderRadius: '8px', border: 'none', cursor: 'pointer', fontWeight: 'bold' }}>Close Now</button>
+                                                </div>
+                                            )}
                                         </div>
                                     )}
 
