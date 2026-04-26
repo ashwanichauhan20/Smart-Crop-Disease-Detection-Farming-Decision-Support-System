@@ -30,8 +30,10 @@ export function VideoCallProvider({ children }) {
         const isLocalhost = API_BASE.includes('localhost')
         
         // We configure Peer to use our custom backend signaling server
+        const peerHost = isLocalhost ? 'localhost' : (API_BASE ? API_BASE.replace('https://', '').replace('http://', '').split(':')[0] : window.location.hostname);
+        
         const newPeer = new Peer(currentUser._id, {
-            host: isLocalhost ? 'localhost' : API_BASE.replace('https://', '').replace('http://', '').split(':')[0],
+            host: peerHost,
             port: isLocalhost ? 5001 : 443,
             path: '/api/peerjs',
             secure: !isLocalhost
